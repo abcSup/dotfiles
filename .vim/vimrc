@@ -29,21 +29,29 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" general
 syntax on
 filetype plugin indent on
 set encoding=utf-8
 set number
+set cursorline
+set wildmenu
+set path+=**
+set showmatch
 set hidden
+set incsearch
 set hlsearch
 
+" indentation
 set tabstop=2
 set softtabstop=2
 set expandtab
 set shiftwidth=2
 
+" buffer
 nmap <leader>l :bnext<CR>
 nmap <leader>h :bprevious<CR>
-nmap <leader>q :bd<CR>
+nmap <leader>q :bw<CR>
 
 " vim-airline
 set laststatus=2

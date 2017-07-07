@@ -1,0 +1,24 @@
+[volume]
+label=  
+command=amixer get Softmaster | grep -E -o '[0-9]{1,3}%' | head -1
+interval=3
+
+[temperature]
+label=  
+command=sensors -u | grep -A1 "Core" | grep -Po "(?<=_input: )([0-9]+)" | xargs -n4
+interval=1
+
+[wireless]
+label=  
+command=[ -z $(iwgetid -r) ] || echo $(iwgetid -r)
+interval=3
+
+[bandwidth]
+label=  
+command=~/scripts/bandwidth.sh
+interval=1
+
+[time]
+label=  
+command=date +'%a %d %b %T'
+interval=1

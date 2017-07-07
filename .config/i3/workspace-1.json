@@ -1,0 +1,42 @@
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 974,
+       "width": 1226,
+       "x": 42,
+       "y": 64
+    },
+    "name": "How to split a string literal across multiple lines in C / Objective-C? - Stack Overflow - Chromium",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Chromium$",
+       "instance": "^chromium$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 388,
+       "width": 644,
+       "x": 0,
+       "y": 0
+    },
+    "name": "uxterm",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^UXTerm$",
+       "instance": "^xterm$"
+       }
+    ],
+    "type": "con"
+}
+
