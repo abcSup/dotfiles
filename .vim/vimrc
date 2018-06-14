@@ -49,9 +49,9 @@ set expandtab
 set shiftwidth=2
 
 " buffer
-nmap <leader>l :bnext<CR>
-nmap <leader>h :bprevious<CR>
-nmap <leader>q :bw<CR>
+nmap <Leader>l :bnext<CR>
+nmap <Leader>h :bprevious<CR>
+nmap <Leader>q :bw<CR>
 
 " vim-airline
 set laststatus=2
@@ -64,3 +64,9 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+
+" session shortcuts
+let g:sessions_dir = '~/.vim-sessions/'
+exec 'nnoremap <Leader>ss :mks! ' . g:sessions_dir . '*.vim<C-D><BS><BS><BS><BS><BS>'
+exec 'nnoremap <Leader>sr :so ' . g:sessions_dir . '*.vim<C-D><BS><BS><BS><BS><BS>'
+
